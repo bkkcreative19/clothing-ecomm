@@ -22,10 +22,10 @@ class SignUp extends React.Component {
         e.preventDefault();
 
         const { displayName, email, password, comfirmPassword } = this.state;
-        if(password !== comfirmPassword) {
-            alert('passwords dont match')
-            return
-        }
+        // if(password !== comfirmPassword) {
+        //     alert('passwords dont match')
+        //     return
+        // }
         
 
         try {
@@ -37,7 +37,7 @@ class SignUp extends React.Component {
                 displayName: '',
                 email: '',
                 password: '',
-                comfirmPassword: ''
+                // comfirmPassword: ''
             })
         } catch(err) {
             console.log(err)
